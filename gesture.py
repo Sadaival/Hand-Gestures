@@ -39,7 +39,7 @@ while(1):
         
         
     #find contours
-        _,contours,hierarchy= cv2.findContours(mask,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+        contours,hierarchy= cv2.findContours(mask,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
     
    #find contour of max area(hand)
         cnt = max(contours, key = lambda x: cv2.contourArea(x))
