@@ -54,8 +54,7 @@ while(1):
         
      #define area of hull and area of hand
         areahull = cv2.contourArea(hull)
-        areacnt = cv2.contourArea(cnt)
-      
+        areacnt = cv2.contourArea(cnt)  
     #find the percentage of area not covered by hand in convex hull
         arearatio=((areahull-areacnt)/areacnt)*100
     
