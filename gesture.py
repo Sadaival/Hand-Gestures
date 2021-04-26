@@ -20,7 +20,6 @@ while(1):
         hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
         
         
-         
     # define range of skin color in HSV
         lower_skin = np.array([0,20,70], dtype=np.uint8)
         upper_skin = np.array([20,255,255], dtype=np.uint8)
